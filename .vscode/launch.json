@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Playwright Test",
+      "program": "${workspaceFolder}/node_modules/playwright/test/lib/cli.js",
+      "args": [
+        "tests/hotelBooking.spec.ts",
+        "--project=Desktop Chrome",
+        "--headed"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "env": {
+        "TEST_ENV": "QA1"
+      }
+    }
+  ]
+}
